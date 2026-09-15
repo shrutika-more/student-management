@@ -40,6 +40,7 @@ public Student updateStudent(int id, Student student) {
 
     existingStudent.setName(student.getName());
     existingStudent.setAge(student.getAge());
+    existingStudent.setCity(student.getCity());
 
     return repository.save(existingStudent);
 }
